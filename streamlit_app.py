@@ -9,6 +9,9 @@ from sklearn.metrics import classification_report
 from tqdm import tqdm
 import streamlit as st
 from tensorflow.keras.models import load_model
+import matplotlib.pyplot as plt
+plt.switch_backend('agg')
+
 
 # Load the saved model for tumor detection
 loaded_tumor_model = tf.keras.models.load_model("tumor_detection_model.h5")
